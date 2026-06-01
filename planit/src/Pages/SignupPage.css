@@ -1,0 +1,57 @@
+.signup-container {
+  padding: 1.4375rem;
+}
+
+.hero {
+  border-radius: 1.875rem;
+  padding: 2.5rem 1.125rem;
+  background: #02BAFF;
+  max-width: 780px;
+}
+
+.continue-with-google {
+  border: 1px solid #0B1F3A80;
+  transition: all 0.3s ease-in-out;
+  border-radius: 14px;
+}
+
+.continue-with-google:hover {
+  background: #D4AF37;
+  border-color: #D4AF37;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.form-container {
+  color: #0B1F3A;
+}
+
+.signup-form {
+  max-width: 450px;
+}
+
+.signup-form input, .signup-form select {
+  border-radius: 10px;
+  background: #F2F4F7;
+}
+
+.signup-form input:focus, .signup-form select:focus {
+  outline: none;
+  border: 2px solid #D4AF37;
+}
+
+.btn {
+  border-radius: 10px;
+  background: #D4AF37;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background: #B8860B;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.signup-form span {
+  color: #DAAF37;
+}
