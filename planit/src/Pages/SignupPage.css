@@ -1,57 +1,66 @@
 .signup-container {
   padding: 1.4375rem;
 }
-
 .hero {
-  border-radius: 1.875rem;
-  padding: 2.5rem 1.125rem;
-  background: #02BAFF;
+  background: #04000f;
   max-width: 780px;
+  overflow: hidden;
+  position: relative;
+  background-image: url('../assets/images/signup-hero.png');
+  background-size: 100% 100%;
+}
+
+.card:nth-child(2),
+.card:last-child {
+  background: #FFFFFF1A;
+  backdrop-filter: blur(20px);
+}
+
+.form-container {
+  max-width: 480px;
 }
 
 .continue-with-google {
-  border: 1px solid #0B1F3A80;
+  border: 1px solid #0b1f3a80;
   transition: all 0.3s ease-in-out;
   border-radius: 14px;
 }
 
 .continue-with-google:hover {
-  background: #D4AF37;
-  border-color: #D4AF37;
+  background: #d4af37;
+  border-color: #d4af37;
   transform: scale(1.05);
   cursor: pointer;
 }
 
 .form-container {
-  color: #0B1F3A;
+  color: #0b1f3a;
 }
 
-.signup-form {
-  max-width: 450px;
-}
-
-.signup-form input, .signup-form select {
+.signup-form input,
+.signup-form select {
   border-radius: 10px;
-  background: #F2F4F7;
+  background: #f2f4f7;
 }
 
-.signup-form input:focus, .signup-form select:focus {
+.signup-form input:focus,
+.signup-form select:focus {
   outline: none;
-  border: 2px solid #D4AF37;
+  border: 2px solid #d4af37;
 }
 
 .btn {
   border-radius: 10px;
-  background: #D4AF37;
+  background: #d4af37;
   transition: all 0.3s ease-in-out;
 }
 
 .btn:hover {
-  background: #B8860B;
+  background: #b8860b;
   cursor: pointer;
   transform: scale(1.05);
 }
 
-.signup-form span {
-  color: #DAAF37;
+.signup-form a {
+  color: #daaf37;
 }

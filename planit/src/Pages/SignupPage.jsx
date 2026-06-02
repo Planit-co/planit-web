@@ -17,12 +17,12 @@ const SignupPage = () => {
   };
 
   return (
-    <div className="signup-container flex items-stretch">
-      <div className="hero w-1/2 text-white flex flex-col justify-between mr-24">
+    <div className="signup-container flex items-stretch 2xl:justify-center">
+      <div className="hero w-3/5 lg:w-1/2  text-white flex flex-col justify-between mr-20 lg:mr-24 px-2 py-4 sm:px-2.5 sm:py-5 lg:px-7 lg:py-14 rounded-2xl lg:rounded-4xl">
         <div className="heading">
-          <span className="logo font-black text-sm">Planit</span>
-          <div className="mt-20">
-            <h1 className="font-black text-4xl mb-2">
+          <span className="font-black text-sm">Planit</span>
+          <div className="mt-18 xl:mt-32">
+            <h1 className="font-black text-3xl xl:text-4xl mb-2">
               Plan smarter. Deliver better.
             </h1>
             <p className="font-medium text-sm">
@@ -32,18 +32,18 @@ const SignupPage = () => {
           </div>
         </div>
         <div className="getting-started">
-          <div className="getting-started-heading flex items-center justify-between mb-10">
-            <h2 className="text-3xl font-bold max-w-1/2">
-              Get Started With Us{" "}
+          <div className="getting-started-heading flex items-center justify-between mb-10 xl:mb-11">
+            <h2 className="text-2xl xl:text-3xl font-bold max-w-1/2 xl:max-w-2/5">
+              Get Started With Us
             </h2>
-            <p className="text-sm font-medium max-w-1/3">
+            <p className="text-sm font-medium max-w-1/3 xl:max-w-2/5">
               Complete the easy steps to setup your account as a planner or
               vendor
             </p>
           </div>
           <div className="gap-2 text-sm grid grid-cols-3">
-            <div className="rounded-2xl px-4 py-6 bg-white text-black">
-              <h3 className="rounded-full bg-black w-6 h-6 flex items-center justify-center text-white">
+            <div className="card rounded-xl xl:rounded-2xl px-2.5 py-5 xl:px-4.5 xl:py-8 bg-white text-black">
+              <h3 className="rounded-full bg-black w-6 h-6 flex items-center justify-center text-white mb-4 font-semibold">
                 1
               </h3>
               <p className="font-bold">Fill in your details</p>
@@ -51,8 +51,8 @@ const SignupPage = () => {
                 Your basic info and role, all in one place.
               </p>
             </div>
-            <div className="rounded-2xl px-4 py-6">
-              <h3 className="rounded-full bg-black w-6 h-6 flex items-center justify-center">
+            <div className="card rounded-xl xl:rounded-2xl px-2.5 py-5 xl:px-4.5 xl:py-8">
+              <h3 className="rounded-full bg-black w-6 h-6 flex items-center justify-center mb-4 font-semibold">
                 2
               </h3>
               <p className="font-bold">
@@ -63,8 +63,8 @@ const SignupPage = () => {
                 Quick confirmation to secure your account.
               </p>
             </div>
-            <div className="rounded-2xl px-4 py-6">
-              <h3 className="rounded-full bg-black w-6 h-6 flex items-center justify-center">
+            <div className="card rounded-xl xl:rounded-2xl px-2.5 py-5 xl:px-4.5 xl:py-8">
+              <h3 className="rounded-full bg-black w-6 h-6 flex items-center justify-center mb-4 font-semibold">
                 3
               </h3>
               <p className="font-bold">Finish your profile</p>
@@ -77,30 +77,27 @@ const SignupPage = () => {
       </div>
 
       {/* Signup Form */}
-      <div className="form-container h-full flex flex-col pt-20">
-        <h2 className="text-4xl font-bold mb-2 text-center">
+      <div className="form-container flex flex-col w-1/3">
+        <h2 className="text-3xl xl:text-4xl font-bold mb-2 text-center mt-20 xl:mt-25">
           Let's get you started!
         </h2>
-        <p className="text-sm font-medium mb-14 text-center">
+        <p className="text-sm font-medium mb-10 xl:mb-14 text-center">
           Takes less than 2 minutes.
         </p>
-        <form className="signup-form px-3 py-4">
-          <div className="continue-with-google mb-8 p-3 flex justify-center items-center gap-2.5">
+        <form className="signup-form xl:px-3 xl:py-4 text-sm xl:text-base">
+          <div className="continue-with-google mb-6 xl:mb-8 p-3 flex justify-center items-center gap-2.5">
             <img src={GoogleIcon} alt="Google Icon" />
             <p className="font-semibold text-sm">Continue with Google</p>
           </div>
 
-          <div className="flex items-center justify-between mb-8">
+          <div className="flex items-center justify-between mb-6 xl:mb-8">
             <div className="bg-[#0B1F3A] h-px w-1/3"></div>
-            <p>or</p>
+            <p className="font-semibold text-sm">or</p>
             <div className="bg-[#0B1F3A] h-px w-1/3"></div>
           </div>
 
           <div className="mb-4">
-            <label
-              className="block font-semibold mb-2.5 text-base"
-              htmlFor="name"
-            >
+            <label className="block font-semibold mb-2.5" htmlFor="name">
               Full Name
             </label>
             <input
@@ -111,10 +108,7 @@ const SignupPage = () => {
             />
           </div>
           <div className="mb-4">
-            <label
-              className="block font-semibold mb-2.5 text-base"
-              htmlFor="email"
-            >
+            <label className="block font-semibold mb-2.5" htmlFor="email">
               Email Address
             </label>
             <input
@@ -125,10 +119,7 @@ const SignupPage = () => {
             />
           </div>
           <div className="mb-4 relative">
-            <label
-              className="block font-semibold mb-2.5 text-base"
-              htmlFor="password"
-            >
+            <label className="block font-semibold mb-2.5" htmlFor="password">
               Password
             </label>
             <input
@@ -143,10 +134,13 @@ const SignupPage = () => {
               className="absolute right-5 top-12.5 cursor-pointer z-10"
               onClick={() => togglePasswordVisibility("password")}
             />
+            <div
+              className={`absolute right-5 top-14 border w-5 border-[#9CA3AF] bg-[#9CA3AF] rotate-150 ${showPassword.password ? "hidden" : "block"}`}
+            ></div>
           </div>
           <div className="mb-4 relative">
             <label
-              className="block font-semibold mb-2.5 text-base"
+              className="block font-semibold mb-2.5"
               htmlFor="confirm-password"
             >
               Confirm Password
@@ -160,15 +154,15 @@ const SignupPage = () => {
             <img
               src={EyeIcon}
               alt="Eye Icon"
-              className="absolute right-5 top-12.5 cursor-pointer"
+              className="absolute right-5 top-12.5 cursor-pointer z-10"
               onClick={() => togglePasswordVisibility("confirmPassword")}
             />
+            <div
+              className={`absolute right-5 top-14 border w-5 border-[#9CA3AF] bg-[#9CA3AF] rotate-150 ${showPassword.confirmPassword ? "hidden" : "block"}`}
+            ></div>
           </div>
-          <div className="mb-8">
-            <label
-              className="block font-semibold mb-2.5 text-base"
-              htmlFor="role"
-            >
+          <div className="mb-6 xl:mb-8">
+            <label className="block font-semibold mb-2.5" htmlFor="role">
               Select Role
             </label>
             <select
@@ -187,9 +181,9 @@ const SignupPage = () => {
             Sign Up
           </button>
           <p className="text-center text-sm mt-2.5">
-            <a href="/login">
-              Already have an account ?{" "}
-              <span className=" cursor-pointer">Log In</span>{" "}
+            Already have an account?{" "}
+            <a href="/login" className=" cursor-pointer">
+              Log In
             </a>
           </p>
         </form>
