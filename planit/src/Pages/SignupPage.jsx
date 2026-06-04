@@ -18,7 +18,7 @@ const SignupPage = () => {
 
   return (
     <div className="signup-container flex items-stretch 2xl:justify-center">
-      <div className="hero w-3/5 lg:w-1/2  text-white flex flex-col justify-between mr-20 lg:mr-24 px-2 py-4 sm:px-2.5 sm:py-5 lg:px-7 lg:py-14 rounded-2xl lg:rounded-4xl">
+      <div className="hero w-3/5 lg:w-1/2  text-white flex flex-col justify-between mr-16 md:mr-20 lg:mr-24 px-2 py-4 sm:px-2.5 sm:py-5 lg:px-7 lg:pt-14 lg:pb-8 xl:pb-12 rounded-2xl lg:rounded-4xl">
         <div className="heading">
           <span className="font-black text-sm">Planit</span>
           <div className="mt-18 xl:mt-32">
@@ -87,7 +87,7 @@ const SignupPage = () => {
         <form className="signup-form xl:px-3 xl:py-4 text-sm xl:text-base">
           <div className="continue-with-google mb-6 xl:mb-8 p-3 flex justify-center items-center gap-2.5">
             <img src={GoogleIcon} alt="Google Icon" />
-            <p className="font-semibold text-sm">Continue with Google</p>
+            <p className="font-semibold text-sm poppins-semibold">Continue with Google</p>
           </div>
 
           <div className="flex items-center justify-between mb-6 xl:mb-8">

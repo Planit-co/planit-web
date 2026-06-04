@@ -1,6 +1,13 @@
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
 .signup-container {
   padding: 1.4375rem;
 }
+
 .hero {
   background: #04000f;
   max-width: 780px;
