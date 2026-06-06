@@ -1,26 +1,5 @@
-.poppins-semibold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
 .signup-container {
   padding: 1.4375rem;
-}
-
-.hero {
-  background: #04000f;
-  max-width: 780px;
-  overflow: hidden;
-  position: relative;
-  background-image: url('../assets/images/signup-hero.png');
-  background-size: 100% 100%;
-}
-
-.card:nth-child(2),
-.card:last-child {
-  background: #FFFFFF1A;
-  backdrop-filter: blur(20px);
 }
 
 .form-container {
@@ -68,6 +47,14 @@
   transform: scale(1.05);
 }
 
-.signup-form a {
+.signup-form .link {
+  color: #daaf37;
+}
+
+.signup-form .forgot-link {
+  color: #0b1f3a;
+}
+
+.signup-form .forgot-link:hover {
   color: #daaf37;
 }
