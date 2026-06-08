@@ -2,7 +2,7 @@ import "./DesktopHero.css";
 
 const DesktopHero = ({ addedClassName = "" }) => {
   return (
-    <div className="hero w-3/5 lg:w-1/2  text-white flex flex-col justify-between mr-16 md:mr-20 lg:mr-24 px-2 py-4 sm:px-2.5 sm:py-5 lg:px-7 lg:pt-14 lg:pb-8 xl:pb-12 rounded-2xl lg:rounded-4xl">
+    <div className="hero hidden w-3/5 lg:w-1/2  text-white md:flex flex-col justify-between px-2 py-4 sm:px-2.5 sm:py-5 lg:px-7 lg:pt-14 lg:pb-8 xl:pb-12 rounded-3xl lg:rounded-4xl">
       <div className={`heading ${addedClassName} `}>
         <span className="font-black text-sm">Planit</span>
         <div className="mt-18 xl:mt-32">
@@ -24,7 +24,7 @@ const DesktopHero = ({ addedClassName = "" }) => {
             Complete the easy steps to setup your account as a planner or vendor
           </p>
         </div>
-        <div className="gap-2 text-sm grid grid-cols-3">
+        <div className="gap-2 text-sm grid grid-cols-2 lg:grid-cols-3">
           <div className="card rounded-xl xl:rounded-2xl px-2.5 py-5 xl:px-4.5 xl:py-8 bg-white text-black">
             <h3 className="rounded-full bg-black w-6 h-6 flex items-center justify-center text-white mb-4 font-semibold">
               1

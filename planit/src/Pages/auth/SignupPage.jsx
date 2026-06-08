@@ -19,12 +19,12 @@ const SignupPage = () => {
   };
 
   return (
-    <div className="signup-container flex items-stretch 2xl:justify-center">
+    <div className="signup-container flex items-stretch 2xl:justify-center justify-center md:gap-5 lg:gap-24 ">
       <DesktopHero />
 
       {/* Signup Form */}
-      <div className="form-container flex flex-col w-1/3">
-        <h2 className="text-3xl xl:text-4xl font-bold mb-2 text-center mt-20 xl:mt-25">
+      <div className="form-container flex flex-col w-full sm:w-3/5 md:w-1/3 border border-amber-300">
+        <h2 className="text-3xl xl:text-4xl font-bold mb-2 text-center mt-10 md:mt-20 xl:mt-25">
           Let's get you started!
         </h2>
         <p className="text-sm font-medium mb-10 xl:mb-14 text-center">
@@ -33,7 +33,9 @@ const SignupPage = () => {
         <form className="signup-form xl:px-3 xl:py-4 text-sm xl:text-base">
           <div className="continue-with-google mb-6 xl:mb-8 p-3 flex justify-center items-center gap-2.5">
             <img src={GoogleIcon} alt="Google Icon" />
-            <p className="font-semibold text-sm poppins-semibold">Continue with Google</p>
+            <p className="font-semibold text-sm poppins-semibold">
+              Continue with Google
+            </p>
           </div>
 
           <div className="flex items-center justify-between mb-6 xl:mb-8">

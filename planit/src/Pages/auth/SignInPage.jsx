@@ -14,10 +14,10 @@ const SignInPage = () => {
 
   return (
     <>
-      <div className="signup-container flex items-center 2xl:justify-center">
-        <DesktopHero addedClassName = {"mb-40"} />
+      <div className="signup-container flex items-center 2xl:justify-center justify-center md:gap-5 lg:gap-24 ">
+        <DesktopHero addedClassName={"mb-40"} />
 
-        <div className="form-container flex flex-col w-1/3">
+        <div className="form-container flex flex-col w-full sm:w-3/5 md:w-1/3">
           <h2 className="text-3xl xl:text-4xl font-bold mb-2 text-center">
             Welcome Back!
           </h2>
@@ -71,10 +71,12 @@ const SignInPage = () => {
             </div>
             <div className="mb-16 flex justify-between items-center font-medium xl:font-semibold">
               <div className="flex items-center">
-                <input type="checkbox" id="remember" className="mr-1 cursor-pointer" />
-                <label htmlFor="remember">
-                  Remember me
-                </label>
+                <input
+                  type="checkbox"
+                  id="remember"
+                  className="mr-1 cursor-pointer"
+                />
+                <label htmlFor="remember">Remember me</label>
               </div>
               <Link to="/forgot-password" className="forgot-link">
                 Forgot Password?
