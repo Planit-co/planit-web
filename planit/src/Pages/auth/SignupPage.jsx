@@ -23,7 +23,7 @@ const SignupPage = () => {
       <DesktopHero />
 
       {/* Signup Form */}
-      <div className="form-container flex flex-col w-full sm:w-3/5 md:w-1/3 border border-amber-300">
+      <div className="form-container flex flex-col w-full sm:w-3/5 md:w-1/3">
         <h2 className="text-3xl xl:text-4xl font-bold mb-2 text-center mt-10 md:mt-20 xl:mt-25">
           Let's get you started!
         </h2>
@@ -130,7 +130,7 @@ const SignupPage = () => {
           </button>
           <p className="text-center text-sm mt-2.5">
             Already have an account?{" "}
-            <Link to="/login" className="link cursor-pointer">
+            <Link to="/signin" className="link cursor-pointer">
               Log In
             </Link>
           </p>
