@@ -1,7 +1,20 @@
-.hero {
+.hero-section {
   max-width: 276rem;
 }
 
-.arrow {
-  color: #D4AF37;
+.header {
+  color: #0b1f3a;
+}
+
+.image-overlay {
+  background: #0b1f3a;
+  opacity: 80%;
+}
+
+.arrow, .main-content span {
+  color: #d4af37;
+}
+
+.main img {
+  border-color: #d4af37;
 }
