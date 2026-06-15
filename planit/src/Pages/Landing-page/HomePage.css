@@ -1,3 +1,4 @@
+/* -----------------Hero Section---------------------- */
 .hero-section {
   max-width: 276rem;
 }
@@ -11,10 +12,36 @@
   opacity: 80%;
 }
 
-.arrow, .main-content span {
+.arrow,
+.main-content span {
   color: #d4af37;
+}
+
+.btn.btn-planner {
+  background: #d4af37b2;
+  box-shadow:
+    4px 4px 10px 0px #d4af37b2 inset,
+    -4px -4px 10px 0px #d4af37b2;
+}
+
+.btn.btn-vendor {
+  background: #fff;
+  color: #0b1f3a;
+  box-shadow: -4px -4px 10px 0px #d4af37b2;
+}
+
+.btn.btn-vendor:hover {
+  background: #F6F1EB;
+}
+
+.main-content .roadmap>p:nth-child(2) {
+  padding: 0 1rem;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
 }
 
 .main img {
   border-color: #d4af37;
 }
+
+/* ----------------Problem Section----------------------- */
