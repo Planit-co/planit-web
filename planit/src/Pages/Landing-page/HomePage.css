@@ -45,3 +45,12 @@
 }
 
 /* ----------------Problem Section----------------------- */
+.problem-section {
+  color: #0B1F3A;
+  max-width: 276rem;
+  background-color: #F6F1EBF2;
+}
+
+.problem-section>nav {
+  background: #038CC1E5;
+}
