@@ -1,5 +1,6 @@
 import HeroSection from "./HeroSection";
 import ProblemSection from "./ProblemSection";
+import SolutionSection from "./SolutionSection";
 import "./HomePage.css";
 
 const HomePage = () => {
@@ -7,6 +8,7 @@ const HomePage = () => {
     <>
       <HeroSection />
       <ProblemSection />
+      <SolutionSection />
     </>
   );
 };

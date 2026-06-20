@@ -3,9 +3,9 @@ import VendorStrategizing from "../../assets/images/vendors-strategizing.svg";
 
 const ProblemSection = () => {
   return (
-    <section className="problem-section montserrat-font font-semibold pb-3">
+    <section className="problem-section montserrat-font pb-3">
       <nav className="p-2 md:px-5 md:py-4.5 lg:px-10">
-        <ul className="montserrat-font font-semibold flex justify-between">
+        <ul className="font-semibold flex justify-between">
           <li>Corporate Events</li>
           <li>Large-scale Productions</li>
           <li>Conferences</li>
@@ -20,7 +20,7 @@ const ProblemSection = () => {
             <li className="playfair-display-font font-bold text-xl md:text-2xl mb-7">
               The Planner’s Struggle
             </li>
-            <ul className="montserrat-font flex flex-col gap-4">
+            <ul className="flex flex-col gap-4">
               <li>Keeping up with endless Whatsapp threads.</li>
               <li>Manually sourcing for Vendors.</li>
               <li>Unverified service providers.</li>
@@ -29,15 +29,15 @@ const ProblemSection = () => {
             </ul>
           </div>
 
-          <img src={VendorStrategizing} alt="vendors strategizing" />
+          <img src={VendorStrategizing} alt="vendors strategizing" loading="lazy" />
 
-          <img src={PlannerStrategizing} alt="planners strategizing" />
+          <img src={PlannerStrategizing} alt="planners strategizing" loading="lazy" />
 
           <div className="mx-auto">
             <li className="playfair-display-font font-bold text-xl md:text-2xl mb-7">
               The Vendor’s Hurdle
             </li>
-            <ul className="montserrat-font flex flex-col gap-4">
+            <ul className="flex flex-col gap-4">
               <li>Disorganized Client communication.</li>
               <li>Overdependence on referrals.</li>
               <li>No structured review system.</li>
@@ -46,7 +46,7 @@ const ProblemSection = () => {
           </div>
         </div>
 
-        <p className="montserrat-font italic font-medium text-xl w-max mx-auto pb-2.5 border-b border-[#D4AF37] ">
+        <p className="italic font-medium text-xl w-max mx-auto pb-2.5 border-b border-[#D4AF37] ">
           PlanIt replaces disorganization with structured collaboration!{" "}
         </p>
       </div>

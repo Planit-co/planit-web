@@ -3,7 +3,7 @@ import HeroImage from "../../assets/images/hero-image.jpg";
 
 const HeroSection = () => {
   return (
-    <div className="hero-section relative p-2 md:p-5 lg:p-10">
+    <section className="hero-section relative p-2 md:p-5 lg:p-10">
       {/* Background Image */}
       <img
         src="/images/bg-image.jpg"
@@ -76,7 +76,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

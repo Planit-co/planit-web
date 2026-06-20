@@ -47,10 +47,28 @@
 /* ----------------Problem Section----------------------- */
 .problem-section {
   color: #0B1F3A;
-  max-width: 276rem;
   background-color: #F6F1EBF2;
 }
 
 .problem-section>nav {
   background: #038CC1E5;
 }
+
+.problem-section>nav>ul, .problem-section>div {
+  max-width: 276rem;
+}
+
+/* ---------------------Solution Section------------------------- */
+.solution-section {
+  /* background-color: #F6F1EB; */
+  color: #0B1F3A;
+}
+
+.solution-section>div {
+  max-width: 276rem;
+}
+
+.solution-section span {
+  color: #D4AF37;
+}
+
