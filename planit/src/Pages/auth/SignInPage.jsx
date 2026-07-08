@@ -91,7 +91,7 @@ const SignInPage = () => {
             </button>
             <p className="text-center text-sm mt-2.5">
               Don't have an account?{" "}
-              <Link to="/signup" className="link cursor-pointer">
+              <Link to="/" className="link cursor-pointer">
                 Sign Up
               </Link>
             </p>
