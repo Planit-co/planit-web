@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import DesktopHero from "./DesktopHero";
-import "./SignUpPage.css";
+import "./SignupPage.css";
 import GoogleIcon from "../../assets/images/google-icon.svg";
 import EyeIcon from "../../assets/images/eye-icon.svg";
 
