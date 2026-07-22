@@ -24,7 +24,7 @@ const SignupPage = () => {
 
       {/* Signup Form */}
       <div className="form-container flex flex-col w-full sm:w-3/5 md:w-1/3">
-        <h2 className="text-3xl xl:text-4xl font-bold mb-2 text-center mt-5 md:mt-10">
+        <h2 className="text-3xl xl:text-4xl font-bold mb-2 text-center md:mt-10">
           Let's get you started!
         </h2>
         <p className="text-sm font-medium mb-10 xl:mb-10 text-center">
