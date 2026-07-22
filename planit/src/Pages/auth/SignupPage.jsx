@@ -19,15 +19,15 @@ const SignupPage = () => {
   };
 
   return (
-    <div className="signup-container flex items-stretch 2xl:justify-center justify-center md:gap-5 lg:gap-24 ">
+    <div className="signup-container flex items-stretch justify-center md:gap-5 lg:gap-24 ">
       <DesktopHero />
 
       {/* Signup Form */}
       <div className="form-container flex flex-col w-full sm:w-3/5 md:w-1/3">
-        <h2 className="text-3xl xl:text-4xl font-bold mb-2 text-center mt-10 md:mt-20 xl:mt-25">
+        <h2 className="text-3xl xl:text-4xl font-bold mb-2 text-center mt-5 md:mt-10">
           Let's get you started!
         </h2>
-        <p className="text-sm font-medium mb-10 xl:mb-14 text-center">
+        <p className="text-sm font-medium mb-10 xl:mb-10 text-center">
           Takes less than 2 minutes.
         </p>
         <form className="signup-form xl:px-3 xl:py-4 text-sm xl:text-base">
@@ -66,48 +66,52 @@ const SignupPage = () => {
               placeholder="john.doe@example.com"
             />
           </div>
-          <div className="mb-4 relative">
+          <div className="mb-4">
             <label className="block font-semibold mb-2.5" htmlFor="password">
               Password
             </label>
-            <input
-              className="shadow appearance-none w-full py-3 px-5 leading-tight"
-              id="password"
-              type={showPassword.password ? "text" : "password"}
-              placeholder="••••••••"
-            />
-            <img
-              src={EyeIcon}
-              alt="Eye Icon"
-              className="absolute right-5 top-12.5 cursor-pointer z-10"
-              onClick={() => togglePasswordVisibility("password")}
-            />
-            <div
-              className={`absolute right-5 top-14 border w-5 border-[#9CA3AF] bg-[#9CA3AF] rotate-150 ${showPassword.password ? "hidden" : "block"}`}
-            ></div>
+            <div className="relative">
+              <input
+                className="shadow appearance-none w-full py-3 px-5 leading-tight"
+                id="password"
+                type={showPassword.password ? "text" : "password"}
+                placeholder="••••••••"
+              />
+              <img
+                src={EyeIcon}
+                alt="Eye Icon"
+                className="absolute right-5 top-1/2 bottom-1/2 -translate-y-1/2 cursor-pointer z-10"
+                onClick={() => togglePasswordVisibility("password")}
+              />
+              <div
+                className={`absolute right-5 top-1/2 bottom-1/2 -translate-y-1/2 border w-5 border-[#9CA3AF] bg-[#9CA3AF] rotate-150 ${showPassword.password ? "hidden" : "block"}`}
+              ></div>
+            </div>
           </div>
-          <div className="mb-4 relative">
+          <div className="mb-4">
             <label
               className="block font-semibold mb-2.5"
               htmlFor="confirm-password"
             >
               Confirm Password
             </label>
-            <input
-              className="shadow appearance-none w-full py-3 px-5 leading-tight"
-              id="confirm-password"
-              type={showPassword.confirmPassword ? "text" : "password"}
-              placeholder="••••••••"
-            />
-            <img
-              src={EyeIcon}
-              alt="Eye Icon"
-              className="absolute right-5 top-12.5 cursor-pointer z-10"
-              onClick={() => togglePasswordVisibility("confirmPassword")}
-            />
-            <div
-              className={`absolute right-5 top-14 border w-5 border-[#9CA3AF] bg-[#9CA3AF] rotate-150 ${showPassword.confirmPassword ? "hidden" : "block"}`}
-            ></div>
+            <div className="relative">
+              <input
+                className="shadow appearance-none w-full py-3 px-5 leading-tight"
+                id="confirm-password"
+                type={showPassword.confirmPassword ? "text" : "password"}
+                placeholder="••••••••"
+              />
+              <img
+                src={EyeIcon}
+                alt="Eye Icon"
+                className="absolute right-5 top-1/2 bottom-1/2 -translate-y-1/2 cursor-pointer z-10"
+                onClick={() => togglePasswordVisibility("confirmPassword")}
+              />
+              <div
+                className={`absolute right-5 top-1/2 bottom-1/2 -translate-y-1/2 border w-5 border-[#9CA3AF] bg-[#9CA3AF] rotate-150 ${showPassword.confirmPassword ? "hidden" : "block"}`}
+              ></div>
+            </div>
           </div>
           <div className="mb-6 xl:mb-8">
             <label className="block font-semibold mb-2.5" htmlFor="role">
