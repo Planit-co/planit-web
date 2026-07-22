@@ -16,7 +16,7 @@ const SignInPage = () => {
     <div className="signup-container flex items-center justify-center md:gap-5 lg:gap-24 ">
       <DesktopHero addedClassName={"mb-40"} />
 
-      <div className="form-container flex flex-col w-full sm:w-3/5 md:w-1/3 min-h-screen justify-center">
+      <div className="form-container flex flex-col w-full sm:w-3/5 md:w-1/3 justify-center">
         <h2 className="text-3xl xl:text-4xl font-bold mb-2 text-center">
           Welcome Back!
         </h2>
